@@ -67,11 +67,7 @@ def print_results(results_dic, results_stats_dic, model,
     print("{:20}: {:3d}".format('N Images', results_stats_dic['n_images']))
     print("{:20}: {:3d}".format('N Dog Images', results_stats_dic['n_dogs_img']))
     print("{:20}: {:3d}".format('N Not-Dog Images', results_stats_dic['n_notdogs_img']))
-    """          
-    print("{:20}: {:3d}".format('% Correct Dogs', results_stats_dic['pct_correct_dogs']))
-    print("{:20}: {:3d}".format('% Correct Breed', results_stats_dic['pct_correct_breed']))
-    print("{:20}: {:3d}".format('% Correct "Not-a" Dog', results_stats_dic['pct_correct_notdogs']))
-    """
+
     print(" ")
     for key in results_stats_dic:
         if key.startswith('p'):
